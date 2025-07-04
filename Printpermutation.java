@@ -1,3 +1,4 @@
+// Time Complexity = O(n*n!)
 class Printpermutation {
    public static void printPermutation(String str, String perm, int idx) {
       if (str.length() == 0) {
