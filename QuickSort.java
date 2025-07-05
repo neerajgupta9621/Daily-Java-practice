@@ -1,3 +1,5 @@
+// Time Complexity = Worst Case TC = O(n^2)
+// Time Complexity of Average Case = O(nlogn)
 class QuickSort {
     public static int partition(int arr[], int low, int high) {
         int pivot = arr[high];
@@ -29,7 +31,7 @@ class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 6, 3, 9, 5, 2, 8 };
+        int[] arr = { 6, 3, 9, 5, 2, 8, 12, 4, 20, 28 };
         int n = arr.length;
 
         quickSort(arr, 0, n - 1);
