@@ -3,7 +3,7 @@ import java.util.Scanner;
 class ArrayUtility {
     public static int[] inputArray() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter The Number:");
+        System.out.print("Please Enter the Number of Element:");
         int size = input.nextInt();
         int[] nums = new int[size];
         int i = 0;
