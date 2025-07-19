@@ -1,41 +1,38 @@
 class Course {
-    String courseName, enrolledStudents;
-    private String studentName;
-    static int maxCapacity;
+    static int maxCapacity = 100;
+    String courseName;
+    int enrollments ;
 
-    public void setEnrolledStudent(String studentName) {
-        studentName = studentName;
+    String[] enrolledStudents;
+
+    Course(String courseName) {
+        this.courseName = courseName;
+        this.enrollments = 0;
+        this.enrolledStudents = new String[maxCapacity];
     }
 
-    public void setUnenrollStudent(String studentName) {
-        studentName = studentName;
+    static void setMaxCapacity(int maxCapacity) {
+        Course.maxCapacity = maxCapacity;
     }
 
-    public static void setSetMaxCapacity(int capacity) {
-        capacity = capacity;
+    void enrollStudent(String studentName) {
+        enrolledStudents[enrollments] = studentName;
+           enrollments=2;
+        enrollments++;
+        System.out.println(enrollments);
     }
 
-    public void getEnrolledStudent() {
-        System.out.println(studentName + "studentName");
-    }
-
-    public void getUnenrollStudent() {
-        System.out.println("Student Name" + studentName);
-    }
-
-    public void getSetMaxCapacity() {
-        System.out.println("Max Capacity " + maxCapacity);
+    void unenrollStudent(String studentName) {
+        System.out.println("Student rremoved");
+        enrollments--;
     }
 }
 
 class Main {
     public static void main(String[] args) {
-        Course obj = new Course();
-        obj.setEnrolledStudent("Neeraj");
-        obj.setUnenrollStudent("Mala");
-        obj.setSetMaxCapacity(4);
-        obj.getEnrolledStudent();
-        obj.getUnenrollStudent();
-        obj.getSetMaxCapacity();
+        Course obj = new Course("BCA");
+        obj.setMaxCapacity(2);
+        obj.enrollStudent("neeraj");
+        obj.unenrollStudent("Mala");
     }
 }
