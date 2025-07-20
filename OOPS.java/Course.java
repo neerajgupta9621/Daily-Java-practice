@@ -1,7 +1,7 @@
 class Course {
     static int maxCapacity = 100;
     String courseName;
-    int enrollments ;
+    int enrollments;
 
     String[] enrolledStudents;
 
@@ -17,14 +17,15 @@ class Course {
 
     void enrollStudent(String studentName) {
         enrolledStudents[enrollments] = studentName;
-           enrollments=2;
+        enrollments = 2;
         enrollments++;
         System.out.println(enrollments);
     }
 
     void unenrollStudent(String studentName) {
-        System.out.println("Student rremoved");
+        enrollments = 2;
         enrollments--;
+        System.out.println("Student rremoved  and Enrollments = " + enrollments);
     }
 }
 
