@@ -6,7 +6,27 @@ class SwitchCase {
         System.out.println("Welcome to Day of the week detector\n");
         System.out.println("Please enter your day in number:");
         int day = sc.nextInt();
+        //oldSwitch(day);
+        newSwitch(day);
 
+    }
+
+    public static void newSwitch(int day) {
+        String dayStr = switch (day) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> "Wednesday";
+            case 4 -> "Thursday";
+            case 5 -> "Friday";
+            case 6 -> "Saturday";
+            case 7,8 -> "Sunday";
+            default -> "Invalid";
+
+        };
+        System.out.println(dayStr);
+    }
+
+    public static void oldSwitch(int day) {
         switch (day) {
 
             case 1:
