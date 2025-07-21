@@ -4,6 +4,11 @@ class SimpleCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the simple Calculator");
+        System.out.println("1. ADDITION");
+        System.out.println("2. SUBTRACTION");
+        System.out.println("3. MULTIPLICATION");
+        System.out.println("4. DDIVIDE");
+
         System.out.println("Please enter the  Number");
         int num = sc.nextInt();
 
@@ -46,6 +51,9 @@ class SimpleCalculator {
                 int num8 = input3.nextInt();
                 int sum4 = num7 / num8;
                 System.out.println("Division of two number:" + sum4);
+                break;
+            default:
+                System.out.println("Invalid Number");
                 break;
 
         }
