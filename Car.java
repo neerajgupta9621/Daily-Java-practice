@@ -1,54 +1,30 @@
 class Car {
-
     int noOfWheels;
-    String color;
-    float maxSpeed;
-    float currentFuelInLiters;
-    int noOfSeats;
+    int noOfDoors;
+    int maxSpeed;
+    String name;
+    String modelNumber;
+    String company;
 
-    public Car start() {
-        if (currentFuelInLiters == 0) {
-            System.out.println("Car is out if fuel, can not start");
-        } else if (currentFuelInLiters < 5) {
-            System.out.println("Car is in reserved mode, please refuel");
-
-        } else {
-            System.out.println("Car is started.. bruhhhh.....");
-        }
-        return this;
+    public Car(int noOfWheels, int noOfDoors, int maxSpeed, String name, String modelNumber, String company) {
+        this.noOfWheels = noOfWheels;
+        this.noOfDoors = noOfDoors;
+        this.maxSpeed = maxSpeed;
+        this.name = name;
+        this.modelNumber = modelNumber;
+        this.company = company;
     }
-
-    public void drive() {
-        currentFuelInLiters--;
-        System.out.println("Car is driving");
-
-    }
-
-    public void addFuel(float fuel) {
-        currentFuelInLiters += fuel;
-    }
-
-    public float getcurrentFuelLevel() {
-        return currentFuelInLiters;
+    @Override
+    public String toString() {
+        return "Car [noOfWheels=" + noOfWheels + ", noOfDoors=" + noOfDoors + ", maxSpeed=" + maxSpeed + ", name="
+                + name + ", modelNumber=" + modelNumber + ", company=" + company + "]";
     }
 }
 
-class Driver {
+
+class MyCar {
     public static void main(String[] args) {
-        Car myCar = new Car();
-        // myCar.drive();
-        // myCar.addFuel(6);
-        // myCar.drive();
-        // myCar.drive();
-        // myCar.drive();
-        // myCar.addFuel(3);
-        // myCar.drive();
-        // System.out.println(myCar.getcurrentFuelevel());
-
-        Car swift = new Car();
-        swift.addFuel(6);
-        Car startedCar = swift.start();
-        startedCar.drive();
-
+        Car swift = new Car(4, 4, 210, "Thar", "SW897", "Maruti");
+        System.out.println(swift.toString());
     }
 }
