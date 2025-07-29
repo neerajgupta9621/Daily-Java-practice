@@ -34,6 +34,7 @@ class Main {
         Course obj = new Course("BCA");
         obj.setMaxCapacity(2);
         obj.enrollStudent("neeraj");
-        obj.unenrollStudent("Mala");
+       obj.unenrollStudent("Mala");
+            
     }
 }
