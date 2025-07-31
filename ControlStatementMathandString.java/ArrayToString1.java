@@ -5,6 +5,7 @@ class ArraytoString {
                 "detailed", "course", "on", "java",
                 "on", "the", "interne." };
         StringBuilder sb = new StringBuilder();
+        //for each loop
         for (String str : arr) {
             sb.append(str).append(" ");
         }

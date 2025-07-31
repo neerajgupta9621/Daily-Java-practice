@@ -9,7 +9,7 @@ class ExitOnExit {
             String command = sc.next();
             // Two object ko ham == double equal se compare nhi kr sakte hai
             // equalsIgnoreCase me ham kisi bhi letter me input denge to wah shi man lega
-            if (command.equalsIgnoreCase("exit")) {
+            if (command.equalsIgnoreCase("exit")) { 
                 break;
             }
         }
