@@ -1,0 +1,38 @@
+package CollectionFramework;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class TestingList {
+    public static void main(String[] args) {
+        List strList = new ArrayList();
+
+        // add(E e);
+        strList.add("Neeraj");
+        strList.add("Gupta");
+
+        // add(int index,E element);
+        strList.add(1, "Satyam");
+
+        // remove(int index);
+        strList.remove(1);
+
+        // remove(Object o);
+        // strList.remove("Gupta");
+
+        // Clear all the element
+        // strList.clear();
+
+        // Contains(Object o);
+        if (strList.contains("Gupta")) {
+            // indexOf(Object o);
+            System.out.println(strList.indexOf("Gupta"));
+        }
+
+        for (int i = 0; i < strList.size(); i++) {
+            System.out.println(strList.get(i));
+        }
+
+    }
+
+}
