@@ -14,7 +14,6 @@ This repository contains my **daily Java practice programs**, covering various c
 - Exception Handling
 - File Handling
 - Collections (List, Set, Map)
-- Java GUI (Swing basics)
 - Practice from coding platforms (like HackerRank, LeetCode, etc.)
 
 ---

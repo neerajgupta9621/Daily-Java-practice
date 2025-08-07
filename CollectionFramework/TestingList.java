@@ -5,7 +5,7 @@ import java.util.List;
 
 class TestingList {
     public static void main(String[] args) {
-        List strList = new ArrayList();
+        List<String> strList = new ArrayList<>();
 
         // add(E e);
         strList.add("Neeraj");
@@ -17,20 +17,29 @@ class TestingList {
         // remove(int index);
         strList.remove(1);
 
+        //Not Applicable int
+       // strList.add(2);
+
         // remove(Object o);
-        // strList.remove("Gupta");
+         strList.remove("Satyam");
+
+         strList.add("Mala");
 
         // Clear all the element
         // strList.clear();
 
         // Contains(Object o);
-        if (strList.contains("Gupta")) {
+        if (strList.contains("Mala")) {
             // indexOf(Object o);
-            System.out.println(strList.indexOf("Gupta"));
+            System.out.println(strList.indexOf("Mala"));
         }
 
         for (int i = 0; i < strList.size(); i++) {
-            System.out.println(strList.get(i));
+            System.out.print(" " + strList.get(i));
+        }
+        //For Each Loop
+        for(String str:strList){
+            System.out.println(str);
         }
 
     }
