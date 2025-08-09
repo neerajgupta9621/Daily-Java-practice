@@ -10,6 +10,8 @@ public class TestingMap {
         map.put("Aman", 3);
         map.put("Sachan", 19);
         map.put("Ankit", 20);
+
+        
         System.out.println(map);
         System.out.println(map.containsKey("Neeraj"));
         System.out.println(map.size());
