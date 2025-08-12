@@ -6,10 +6,11 @@ import java.util.Map;
 public class TestingMap {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
-        map.put("Neeraj", 1);
+        map.put("Neeraj", 13);// ye nhi print kiya
         map.put("Aman", 3);
         map.put("Sachan", 19);
         map.put("Ankit", 20);
+        map.put("Neeraj", 12);
 
         
         System.out.println(map);

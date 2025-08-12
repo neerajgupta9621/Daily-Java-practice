@@ -12,7 +12,7 @@ class TestingList {
         strList.add("Gupta");
 
         // add(int index,E element);
-        strList.add(1, "Satyam");
+        System.out.println();
 
         // remove(int index);
         strList.remove(1);
