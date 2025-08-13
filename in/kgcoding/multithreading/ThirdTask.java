@@ -8,6 +8,7 @@ public class ThirdTask extends Thread {
             System.out.printf("%d# ", i);
         }
         System.out.println("\n # task complete");
-        long endTime = System.currentTimeMillis();
+         System.out.printf("\n %s # task complete", Thread.currentThread().getName());
+
     }
 }

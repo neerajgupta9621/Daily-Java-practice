@@ -22,6 +22,6 @@ public class NeedOfMultithreading {
         }
         System.out.println("\n # task complete");
         long endTime = System.currentTimeMillis();
-        System.out.printf("TOtal time taken: %d", (endTime - startTime));
+        System.out.printf("Total time taken: %d", (endTime - startTime));
     }
 }
