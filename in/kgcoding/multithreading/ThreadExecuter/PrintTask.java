@@ -9,7 +9,7 @@ public class PrintTask implements Runnable {
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                throw new RuntimeException(e);
             }
             System.out.printf("%d%c", i, targetChar);
         }
