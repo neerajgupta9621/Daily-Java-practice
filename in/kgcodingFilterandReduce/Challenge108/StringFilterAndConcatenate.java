@@ -8,7 +8,7 @@ public class StringFilterAndConcatenate {
                 "Best Youtube Programming Problem", "bakwas");
         String result = strs.stream()
                 .filter(str -> str.length() > 10)
-                .reduce(" ", (a, b) -> a + " " + b);
+                .reduce(" ", (a, b) -> a + " " + b);//Concatenate Kr rhs hai string ko
         System.out.println(result);
     }
 }
